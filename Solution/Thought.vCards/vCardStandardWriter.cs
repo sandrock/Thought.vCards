@@ -336,6 +336,7 @@ namespace Thought.vCards
                     if (address.IsWork)
                         property.Subproperties.Add("WORK");
 
+                    property.Subproperties.Add("ENCODING", "QUOTED-PRINTABLE");
                     properties.Add(property);
 
                 }
@@ -1515,7 +1516,19 @@ namespace Thought.vCards
                     for (int index = 0; index < values.Count; index++)
                     {
 
-                        builder.Append(EncodeEscaped(values[index]));
+                        switch (property.Subproperties.GetValue("ENCODING"))
+                        {
+
+                            case "QUOTED-PRINTABLE":
+                                builder.Append(EncodeQuotedPrintable(values[index]));
+                                break;
+
+                            default:
+                                builder.Append(EncodeEscaped(values[index]));
+                                break;
+
+                        }
+                        
                         if (index < values.Count - 1)
                         {
                             builder.Append(values.Separator);
