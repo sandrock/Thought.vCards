@@ -350,13 +350,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.AdditionalNames,
-                "AdditionalNames is not string.Empty.");
+                "AdditionalNames is not null.");
 
             card.AdditionalNames = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.AdditionalNames,
                 "AdditionalNames is not string.Empty after being assigned null.");
 
@@ -372,13 +372,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Department,
                 "Department is not string.Empty.");
 
             card.Department = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Department,
                 "Department is not string.Empty after being assigned null.");
 
@@ -394,13 +394,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.DisplayName,
                 "DisplayName is not string.Empty.");
 
             card.DisplayName = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.DisplayName,
                 "DisplayName is not string.Empty after being assigned null.");
 
@@ -416,13 +416,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.FamilyName,
                 "FamilyName is not string.Empty.");
 
             card.FamilyName = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.FamilyName,
                 "FamilyName is not string.Empty after being assigned null.");
 
@@ -438,13 +438,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.FormattedName,
                 "FormattedName is not string.Empty.");
 
             card.FormattedName = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.FormattedName,
                 "FormattedName is not string.Empty after being assigned null.");
 
@@ -460,13 +460,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.GivenName,
                 "GivenName is not string.Empty.");
 
             card.GivenName = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.GivenName,
                 "GivenName is not string.Empty after being assigned null.");
 
@@ -482,13 +482,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Mailer,
                 "Mailer is not string.Empty.");
 
             card.Mailer = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Mailer,
                 "Mailer is not string.Empty after being assigned null.");
 
@@ -504,13 +504,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.NamePrefix,
                 "NamePrefix is not string.Empty.");
 
             card.NamePrefix = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.NamePrefix,
                 "NamePrefix is not string.Empty after being assigned null.");
 
@@ -527,13 +527,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.NameSuffix,
                 "NameSuffix is not string.Empty.");
 
             card.NameSuffix = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.NameSuffix,
                 "NameSuffix is not string.Empty after being assigned null.");
 
@@ -549,13 +549,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Office,
                 "Office is not string.Empty.");
 
             card.Office = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Office,
                 "Office is not string.Empty after being assigned null.");
 
@@ -571,13 +571,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Organization,
                 "Organization is not string.Empty.");
 
             card.Organization = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Organization,
                 "Organization is not string.Empty after being assigned null.");
 
@@ -593,13 +593,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.ProductId,
                 "ProductId is not string.Empty.");
 
             card.ProductId = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.ProductId,
                 "ProductId is not string.Empty after being assigned null.");
 
@@ -615,13 +615,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Role,
                 "Role is not string.Empty.");
 
             card.Role = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Role,
                 "Role is not string.Empty after being assigned null.");
 
@@ -637,13 +637,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.TimeZone,
                 "TimeZone is not string.Empty.");
 
             card.TimeZone = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.TimeZone,
                 "TimeZone is not string.Empty after being assigned null.");
 
@@ -659,13 +659,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Title,
                 "Title is not string.Empty.");
 
             card.Title = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.Title,
                 "Title is not string.Empty after being assigned null.");
 
@@ -681,13 +681,13 @@ namespace Tests
 
             vCard card = new vCard();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.UniqueId,
                 "UniqueId is not string.Empty.");
 
             card.UniqueId = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 card.UniqueId,
                 "UniqueId is not string.Empty after being assigned null.");
 

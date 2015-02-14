@@ -78,28 +78,6 @@ namespace Thought.vCards
         /// </summary>
         public vCard()
         {
-
-            // Per Microsoft best practices, string properties should
-            // never return null.  String properties should always
-            // return String.Empty.
-
-            this.additionalNames = string.Empty;
-            this.department = string.Empty;
-            this.displayName = string.Empty;
-            this.familyName = string.Empty;
-            this.formattedName = string.Empty;
-            this.givenName = string.Empty;
-            this.mailer = string.Empty;
-            this.namePrefix = string.Empty;
-            this.nameSuffix = string.Empty;
-            this.office = string.Empty;
-            this.organization = string.Empty;
-            this.productId = string.Empty;
-            this.role = string.Empty;
-            this.timeZone = string.Empty;
-            this.title = string.Empty;
-            this.uniqueId = string.Empty;
-
             this.categories = new StringCollection();
             this.certificates = new vCardCertificateCollection();
             this.deliveryAddresses = new vCardDeliveryAddressCollection();
@@ -124,10 +102,8 @@ namespace Thought.vCards
         public vCard(TextReader input)
             : this()
         {
-
             vCardReader reader = new vCardStandardReader();
             reader.ReadInto(this, input);
-
         }
 
 
@@ -147,7 +123,6 @@ namespace Thought.vCards
                 vCardReader reader = new vCardStandardReader();
                 reader.ReadInto(this, streamReader);
             }
-
         }
 
 
@@ -178,7 +153,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.additionalNames ?? string.Empty;
+                return this.additionalNames;
             }
             set
             {
@@ -265,7 +240,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.department ?? string.Empty;
+                return this.department;
             }
             set
             {
@@ -285,7 +260,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.displayName ?? string.Empty;
+                return this.displayName;
             }
             set
             {
@@ -318,7 +293,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.familyName ?? string.Empty;
+                return this.familyName;
             }
             set
             {
@@ -344,7 +319,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.formattedName ?? string.Empty;
+                return this.formattedName;
             }
             set
             {
@@ -387,7 +362,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.givenName ?? string.Empty;
+                return this.givenName;
             }
             set
             {
@@ -437,7 +412,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.mailer ?? string.Empty;
+                return this.mailer;
             }
             set
             {
@@ -454,7 +429,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.namePrefix ?? string.Empty;
+                return this.namePrefix;
             }
             set
             {
@@ -471,7 +446,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.nameSuffix ?? string.Empty;
+                return this.nameSuffix;
             }
             set
             {
@@ -517,7 +492,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.office ?? string.Empty;
+                return this.office;
             }
             set
             {
@@ -536,7 +511,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.organization ?? string.Empty;
+                return this.organization;
             }
             set
             {
@@ -577,7 +552,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.productId ?? string.Empty;
+                return this.productId;
             }
             set
             {
@@ -621,7 +596,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.role ?? string.Empty;
+                return this.role;
             }
             set
             {
@@ -657,7 +632,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.timeZone ?? string.Empty;
+                return this.timeZone;
             }
             set
             {
@@ -675,7 +650,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.title ?? string.Empty;
+                return this.title;
             }
             set
             {
@@ -719,7 +694,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.uniqueId ?? string.Empty;
+                return this.uniqueId;
             }
             set
             {

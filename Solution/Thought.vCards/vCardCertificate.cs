@@ -35,7 +35,6 @@ namespace Thought.vCards
         /// </summary>
         public vCardCertificate()
         {
-            this.keyType = string.Empty;
         }
 
 
@@ -112,7 +111,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.keyType ?? string.Empty;
+                return this.keyType;
             }
             set
             {

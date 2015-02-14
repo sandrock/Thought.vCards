@@ -15,15 +15,15 @@ namespace Tests
 
             vCardCertificate cert = new vCardCertificate();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 cert.KeyType,
-                "The string KeyType property should default to String.Empty.");
+                "The string KeyType property should default to null.");
 
             cert.KeyType = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 cert.KeyType,
-                "The string KeyType should be String.Empty when assigned null.");
+                "The string KeyType should be null.");
 
         }
 

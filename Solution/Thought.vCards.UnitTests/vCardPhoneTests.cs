@@ -17,15 +17,15 @@ namespace Tests
 
             vCardPhone phone = new vCardPhone();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 phone.FullNumber,
-                "The full number should default to String.Empty.");
+                "The full number should default to null.");
 
             phone.FullNumber = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 phone.FullNumber,
-                "The FullNumber property should return String.Empty instead of null.");
+                "The FullNumber property should return null.");
 
         }
 

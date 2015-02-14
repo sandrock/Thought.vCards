@@ -27,7 +27,6 @@ namespace Thought.vCards
         /// </summary>
         public vCardWebsite()
         {
-            this.url = string.Empty;
         }
 
 
@@ -39,7 +38,7 @@ namespace Thought.vCards
         /// </param>
         public vCardWebsite(string url)
         {
-            this.url = url == null ? string.Empty : url;
+            this.url = url;
         }
 
 
@@ -55,7 +54,7 @@ namespace Thought.vCards
         /// </param>
         public vCardWebsite(string url, vCardWebsiteTypes websiteType)
         {
-            this.url = url == null ? string.Empty : url;
+            this.url = url;
             this.websiteType = websiteType;
         }
 
@@ -127,14 +126,7 @@ namespace Thought.vCards
             }
             set
             {
-                if (value == null)
-                {
-                    this.url = string.Empty;
-                }
-                else
-                {
-                    this.url = value;
-                }
+                this.url = value;
             }
         }
 

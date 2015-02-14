@@ -24,7 +24,7 @@ History
      this library but the implementation was problematic.  Instead each
      string getter now takes the following form:
      
-         return this.property ?? string.Empty;
+         return this.property;
          
      Previously the code attempted to translate null to string.Empty whenever
      the value was assigned -- in the constructor, in the setter, etc.  This

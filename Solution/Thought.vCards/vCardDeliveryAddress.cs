@@ -33,11 +33,6 @@ namespace Thought.vCards
         /// </summary>
         public vCardDeliveryAddress()
         {
-            this.city = string.Empty;
-            this.country = string.Empty;
-            this.postalCode = string.Empty;
-            this.region = string.Empty;
-            this.street = string.Empty;
         }
 
 
@@ -64,7 +59,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.city ?? string.Empty;
+                return this.city;
             }
             set
             {
@@ -80,7 +75,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.country ?? string.Empty;
+                return this.country;
             }
             set
             {
@@ -243,7 +238,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.postalCode ?? string.Empty;
+                return this.postalCode;
             }
             set
             {
@@ -259,7 +254,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.region ?? string.Empty;
+                return this.region;
             }
             set
             {
@@ -275,7 +270,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.street ?? string.Empty;
+                return this.street;
             }
             set
             {
@@ -285,7 +280,7 @@ namespace Thought.vCards
 
 		public string ExtendedAddress {
 			get {
-				return this.extendedAddress ?? string.Empty;
+				return this.extendedAddress;
 			}
 			set {
 				this.extendedAddress = value;
@@ -294,7 +289,7 @@ namespace Thought.vCards
 
 		public string PostOfficeBox {
 			get {
-				return this.postOfficeBox ?? string.Empty;
+				return this.postOfficeBox;
 			}
 			set {
 				this.postOfficeBox = value;

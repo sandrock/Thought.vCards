@@ -36,7 +36,6 @@ namespace Thought.vCards
         /// </summary>
         public vCardSource()
         {
-            this.context = string.Empty;
         }
 
 
@@ -81,7 +80,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.context ?? string.Empty;
+                return this.context;
             }
             set
             {

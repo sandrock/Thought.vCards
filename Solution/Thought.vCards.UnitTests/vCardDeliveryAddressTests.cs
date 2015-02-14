@@ -19,25 +19,25 @@ namespace Tests
 
             vCardDeliveryAddress address = new vCardDeliveryAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.City,
-                "The City property should default to String.Empty.");
+                "The City property should default to null.");
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Country,
-                "The Country property should default to String.Empty.");
+                "The Country property should default to null.");
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.PostalCode,
-                "The PostalCode property should default to String.Empty.");
+                "The PostalCode property should default to null.");
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Region,
-                "The Region property should default to String.Empty.");
+                "The Region property should default to null.");
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Street,
-                "The Street property should default to String.Empty.");
+                "The Street property should default to null.");
 
         }
 
@@ -51,15 +51,15 @@ namespace Tests
 
             vCardDeliveryAddress address = new vCardDeliveryAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.City,
-                "The City property should default to String.Empty.");
+                "The City property should default to null.");
 
             address.City = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.City,
-                "The City property should return String.Empty instead of null.");
+                "The City property should return null.");
 
         }
 
@@ -73,15 +73,15 @@ namespace Tests
 
             vCardDeliveryAddress address = new vCardDeliveryAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Country,
-                "The Country property should default to String.Empty.");
+                "The Country property should default to null.");
 
             address.Country = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Country,
-                "The Country property should return String.Empty instead of null.");
+                "The Country property should return null.");
 
         }
 
@@ -95,15 +95,15 @@ namespace Tests
 
             vCardDeliveryAddress address = new vCardDeliveryAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.PostalCode,
-                "The PostalCode property should default to String.Empty.");
+                "The PostalCode property should default to null.");
 
             address.PostalCode = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.PostalCode,
-                "The PostalCode property should return String.Empty instead of null.");
+                "The PostalCode property should return null.");
 
         }
 
@@ -117,15 +117,15 @@ namespace Tests
 
             vCardDeliveryAddress address = new vCardDeliveryAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Region,
-                "The Region property should default to String.Empty.");
+                "The Region property should default to null.");
 
             address.Region = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Region,
-                "The Region property should return String.Empty instead of null.");
+                "The Region property should return null.");
 
         }
 
@@ -139,15 +139,15 @@ namespace Tests
 
             vCardDeliveryAddress address = new vCardDeliveryAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Street,
-                "The Street property should default to String.Empty.");
+                "The Street property should default to null.");
 
             address.Street = null;
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 address.Street,
-                "The Street property should return String.Empty instead of null.");
+                "The Street property should return null.");
 
         }
 

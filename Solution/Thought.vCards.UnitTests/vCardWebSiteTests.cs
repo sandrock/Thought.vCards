@@ -27,9 +27,9 @@ namespace Tests
                 vCardWebsiteTypes.Default,
                 "The site type should be the default.");
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 site.Url,
-                "The Url should be String.Empty because it was not initialized.");
+                "The Url should be null because it was not initialized.");
 
         }
 
@@ -67,9 +67,9 @@ namespace Tests
         {
             vCardWebsite site = new vCardWebsite((string)null);
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 site.Url,
-                "The Url should be String.Empty even when initialized to null.");
+                "The Url should be null even when initialized to null.");
 
         }
 

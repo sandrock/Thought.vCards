@@ -41,7 +41,7 @@ namespace Thought.vCards
         /// </param>
         public vCardDeliveryLabel(string text)
         {
-            this.text = text == null ? string.Empty : text;
+            this.text = text;
         }
 
 
@@ -215,7 +215,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.text ?? string.Empty;
+                return this.text;
             }
             set
             {

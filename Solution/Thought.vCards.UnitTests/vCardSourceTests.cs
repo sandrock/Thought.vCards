@@ -21,9 +21,9 @@ namespace Tests
 
             vCardSource source = new vCardSource();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 source.Context,
-                "The Context property should default to empty.");
+                "The Context property should default to null.");
 
             Assert.IsNull(
                 source.Uri,

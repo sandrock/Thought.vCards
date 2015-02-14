@@ -34,7 +34,6 @@ namespace Thought.vCards
         /// </summary>
         public vCardEmailAddress()
         {
-            this.address = string.Empty;
             this.emailType = vCardEmailAddressType.Internet;
         }
 
@@ -47,7 +46,7 @@ namespace Thought.vCards
         /// </param>
         public vCardEmailAddress(string address)
         {
-            this.address = address == null ? string.Empty : address;
+            this.address = address;
             this.emailType = vCardEmailAddressType.Internet;
         }
 
@@ -78,7 +77,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.address ?? string.Empty;
+                return this.address;
             }
             set
             {

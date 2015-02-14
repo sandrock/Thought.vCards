@@ -166,7 +166,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.group ?? string.Empty;
+                return this.group;
             }
             set
             {
@@ -182,7 +182,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.language ?? string.Empty;
+                return this.language;
             }
             set
             {
@@ -198,7 +198,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.name ?? string.Empty;
+                return this.name;
             }
             set
             {

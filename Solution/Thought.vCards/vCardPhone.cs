@@ -62,7 +62,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.fullNumber ?? string.Empty;
+                return this.fullNumber;
             }
             set
             {

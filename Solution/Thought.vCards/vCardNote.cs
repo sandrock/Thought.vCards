@@ -45,7 +45,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.language ?? string.Empty;
+                return this.language;
             }
             set
             {
@@ -60,7 +60,7 @@ namespace Thought.vCards
         {
             get
             {
-                return this.text ?? string.Empty;
+                return this.text;
             }
             set
             {
@@ -74,7 +74,7 @@ namespace Thought.vCards
         /// </summary>
         public override string ToString()
         {
-            return this.text ?? string.Empty;
+            return this.text;
         }
 
     }

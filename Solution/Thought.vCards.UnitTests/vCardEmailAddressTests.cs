@@ -23,9 +23,9 @@ namespace Tests
 
             vCardEmailAddress email = new vCardEmailAddress();
 
-            Assert.IsEmpty(
+            Assert.IsNull(
                 email.Address,
-                "The Address property should default to String.Empty.");
+                "The Address property should default to null.");
 
         }
 

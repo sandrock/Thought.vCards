@@ -1134,13 +1134,13 @@ namespace Thought.vCards
             if (addressParts.Length >= 3)
                 deliveryAddress.Street = addressParts[2].Trim();
 
-			if (addressParts.Length >= 2)
-				deliveryAddress.ExtendedAddress = addressParts[1].Trim();
+            if (addressParts.Length >= 2)
+                deliveryAddress.ExtendedAddress = addressParts[1].Trim();
 
-			if (addressParts.Length >= 1)
-				deliveryAddress.PostOfficeBox = addressParts[0].Trim();
+            if (addressParts.Length >= 1)
+                deliveryAddress.PostOfficeBox = addressParts[0].Trim();
 
-			if (deliveryAddress.IsEmpty())
+            if (deliveryAddress.IsEmpty())
             {
 
                 // No address appears to be defined.
@@ -1536,27 +1536,27 @@ namespace Thought.vCards
             string[] names = property.ToString().Split(';');
 
             // The first value is the family (last) name.
-            card.FamilyName = names[0];
+            card.FamilyName = string.IsNullOrEmpty(names[0]) ? null : names[0];
             if (names.Length == 1)
                 return;
 
             // The next value is the given (first) name.
-            card.GivenName = names[1];
+            card.GivenName = string.IsNullOrEmpty(names[1]) ? null : names[1];
             if (names.Length == 2)
                 return;
 
             // The next value contains the middle name.
-            card.AdditionalNames = names[2];
+            card.AdditionalNames = string.IsNullOrEmpty(names[2]) ? null : names[2];
             if (names.Length == 3)
                 return;
 
             // The next value contains the prefix, e.g. Mr.
-            card.NamePrefix = names[3];
+            card.NamePrefix = string.IsNullOrEmpty(names[3]) ? null : names[3];
             if (names.Length == 4)
                 return;
 
             // The last value contains the suffix, e.g. Jr.
-            card.NameSuffix = names[4];
+            card.NameSuffix = string.IsNullOrEmpty(names[4]) ? null : names[4];
 
         }
 
